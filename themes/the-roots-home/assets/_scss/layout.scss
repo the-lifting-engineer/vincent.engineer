@@ -1,0 +1,175 @@
+/**
+ * Site header
+ */
+ .site-header {
+    border-bottom: 1px dashed $grey-color-light;
+    min-height: $spacing-unit * 1.865;
+    display: flex;
+    align-items: flex-end;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+  }
+ 
+  .site-nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: inline;
+    vertical-align: bottom;
+    ol{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+      display: inline;
+      }
+    }
+  }
+  .page-description{
+    @include relative-font-size(.87);
+    padding: 0;
+    margin: 0;
+  }
+  /**
+   * Site footer
+   */
+  .site-footer {
+    font-size: 10px;
+    border-top: 1px dashed $grey-color-light;
+    margin-bottom: 20px;
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  }
+
+
+  /**
+   * Page content
+   */
+  .page-content {
+    padding: $spacing-unit 0;
+  }
+  
+  .page-heading {
+    @include relative-font-size(2);
+  }
+  
+  
+  .post-meta {
+    font-size: $small-font-size;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $grey-color;
+
+    ul{
+      float: right;
+      li{
+        display: inline-block;
+      }
+    }
+  }
+  
+  section.item-list {
+    .item{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      width: 100%;
+          display:flex;
+          flex-wrap: wrap;
+        h3{
+          font-weight: bold;
+          width: 35%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-align: left;
+          text-overflow: ellipsis;
+          flex:auto;
+          margin: 0 16px 0 0;
+        }
+        span{
+          width: calc(60% - 128px);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          flex:auto;
+          margin-right: 16px;
+        }
+        time{
+          box-sizing: border-box;
+          width: 96px;
+          text-align: right;
+        }
+    }
+  }
+
+
+  h3.item-title {
+    display: inline-block;
+    @include relative-font-size(1);
+    margin: .2em;
+  }
+  
+  .pagination{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: $spacing-unit;
+  }
+  
+  /**
+   * Posts
+   */
+  .post-header {
+    margin-bottom: $spacing-unit/2;
+    border-bottom: 1px dotted $grey-color-light;
+  }
+  
+  .post-title {
+    @include relative-font-size(1.25);
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  #disqus_thread{
+    @include relative-font-size(.89);
+  }
+  .post-content {
+    font-family: Tahoma, Arial, sans-serif;
+    margin-bottom: $spacing-unit;
+    p,li{
+      @include relative-font-size(.89);
+    }
+    pre,code{
+      @include relative-font-size(.82);
+    }
+  
+    h2 {
+      @include relative-font-size(1.1);
+      font-weight: bold;
+    }
+  
+    h3 {
+      font-weight: bold;
+      @include relative-font-size(1.075);
+    }
+  
+    h4 {
+      font-weight: bold;
+      @include relative-font-size(.925);
+    }
+  }
+  article~.pagination{
+    padding: $spacing-unit 0;
+    border-top: 1px dashed $grey-color-light;
+  }
+
+  .__h_instagram.card {
+    font-size: 14px;
+    border: 1px solid #bfbaba;
+    padding: 10px 0;
+    background: #fff;
+    .card-link{
+      padding-left: 16px;
+    }
+  }

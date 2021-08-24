@@ -1,0 +1,27 @@
+<header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+      {{- template "breadcrumb" (dict "p1" . "p2" .) -}}
+    </ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="{{ .Site.BaseURL}}">{{.Site.Title}}</a>
+    </h1>
+</header>
+{{if not .IsPage }}<h3 class="page-description">{{ cond .IsHome (.Site.Params.Description | default .Site.Title) (.Title | default .Content)}}</h3>{{ end }}
+{{- define "breadcrumb" -}}
+{{- if .p1.Parent -}}
+{{- template "breadcrumb" (dict "p1" .p1.Parent "p2" .p2 ) -}}
+{{- else if not .p1.IsHome -}}
+{{- template "breadcrumb" (dict "p1" .p1.Site.Home "p2" .p2 ) -}}
+{{- end -}}
+{{- if (not .p1.IsHome ) -}}/{{- end -}}
+<li class="breadcrumb-item {{ if eq .p1 .p2 -}}active{{- end}} {{if .p1.IsPage -}}hidden{{- end}}" {{ if eq .p1 .p2 -}}aria-current="page"{{- end}}
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="{{- .p1.Permalink -}}">
+    <span itemprop="name">{{ if .p1.IsHome }}{{- .p1.Title | default "Index of ~" -}} {{ else }}{{- path.Base .p1.Permalink -}} {{ end }}</span>
+  </a>
+  <meta itemprop="position" content="{{- if .p1.IsPage -}}{{- add .p1.Parent.Weight 1 -}} {{- else -}} {{- .p1.Weight -}} {{- end -}}" />
+</li>
+{{- if and (.p1.IsHome ) (eq .p1 .p2 ) -}}/{{- end -}}
+{{- end -}}

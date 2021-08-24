@@ -1,0 +1,38 @@
+@include media-query($on-laptop) {
+    .post-title{
+        @include relative-font-size(1.65);
+    }
+    .post-content {
+        h1 {
+            @include relative-font-size(1.80);
+        }
+
+        h2 {
+            @include relative-font-size(1.40);
+        }
+    
+        h3 {
+            @include relative-font-size(1.20);
+        }
+    
+        h4 {
+            @include relative-font-size(1.05);
+        }
+    
+        h5 {
+            @include relative-font-size(.98);
+        }
+    
+        h6 {
+            @include relative-font-size(.82);
+        }
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body  { 
+        color: rgb(199, 195, 187);
+        background-color: #231f14;
+    }
+  }

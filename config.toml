@@ -1,7 +1,5 @@
 baseURL = "https://vincent.engineer"
-title = "The EE Home"
-[params]
-  description = "Hello I am Vincent and this is where my projects live"
+title = "Vincent Engineer Projects"
 author = "Vincent"
 copyright = "Copyright © 2021, Vincent; all rights reserved."
 paginate = 3
@@ -25,3 +23,6 @@ pygmentsStyle = "vs"
 
 [markup]
   defaultMarkdownHandler= "goldmark"
+
+  [params]
+description = "Hello I am Vincent, an Electircal Engineer, and this is where my projects live."

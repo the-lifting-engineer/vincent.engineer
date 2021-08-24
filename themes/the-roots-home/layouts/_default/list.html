@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="content item-list">
+    {{if and (not .IsHome) .Parent }} 
+        <div class="item"><ion-icon name="arrow-undo-sharp"></ion-icon>&nbsp;<a title="{{.Parent.Title}}" href="{{.Parent.Permalink}}">../</a></div>
+    {{ end }}
+    {{ range (.Paginate ( (.Pages.ByDate.Reverse).ByWeight) 100).Pages  }}
+    <div class="item">
+        <h3 class="item-title">
+            {{ if eq .Kind "page" }}
+            <ion-icon name="document-text-outline"></ion-icon>&nbsp;
+            {{ else if eq .Kind "term"}}
+            <ion-icon name="bookmarks-outline"></ion-icon>&nbsp;
+            {{ else }}
+            <ion-icon name="folder-outline"></ion-icon>&nbsp;
+            {{ end }} 
+            <a title="{{ .Title }}" href="{{ .Permalink }}">
+                {{ $item := . }}
+                {{ with .File}}
+                    {{if and (eq $item.Kind "page") (not (eq (path.Base .Path) "index.md")) }}
+                        {{ path.Base .Path }}{{ else }}{{ path.Base $item.RelPermalink }} 
+                    {{end}} 
+                {{ else }}
+                {{ path.Base $item.RelPermalink }} 
+                {{end}}
+            </a>
+        </h3>
+        {{with .GitInfo }}<span><em>@{{.AbbreviatedHash}}</em> {{.Subject }}</span>{{ end }}
+        <time datetime="2006-01-02">{{ .Date.Format "2 Jan 2006" }}</time>
+    </div>
+    {{ end }}         
+    {{ with .Paginator}}
+    <div class="pagination">
+        <div class="prev">
+            {{ if .HasPrev }}
+            <a href="{{.Prev.URL}}">Newest</a>
+        {{ end }}
+        </div>
+        <div class="next">
+            {{ if .HasNext }}
+            <a href="{{.Next.URL}}">Oldest</a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}
