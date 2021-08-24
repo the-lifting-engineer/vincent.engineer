@@ -25,4 +25,4 @@ pygmentsStyle = "vs"
   defaultMarkdownHandler= "goldmark"
 
   [params]
-description = "Hello I am Vincent, an Electircal Engineer, and this is where my projects live."
+description = "Hello I am Vincent, an Electrical Engineer, and this is where my projects live."
