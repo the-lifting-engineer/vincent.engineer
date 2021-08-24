@@ -1,3 +1,27 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://vincent.engineer"
+title = "The EE Home"
+[params]
+  description = "Hello I am Vincent and this is where my projects live"
+author = "Vincent"
+copyright = "Copyright © 2021, Vincent; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+theme="the-roots-home"
+
+#enableGitInfo=true
+enableEmoji= true
+enableRobotsTXT= true
+
+# Syntax Highlight Options
+pygmentsCodeFencesGuessSyntax = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsStyle = "vs"
+[pygmentsOptions]
+  linenos= true
+
+[markup]
+  defaultMarkdownHandler= "goldmark"
