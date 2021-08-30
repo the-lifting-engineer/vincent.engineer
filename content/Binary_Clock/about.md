@@ -79,7 +79,7 @@ I also think that this project could be moved to an even smaller foot print usin
 an 8x8 matrix would save a lot of space. (Plus no need for resistors) 
 I might revisit this option just for fun and update this page if I build it, it likely won't get a full write up as it is just being done as proof of concept (this is silly I know it can be done but ya know self satisifaction is important)
 
-Images of the project along with the code will be uploaded here (placeholder for github IP)
+Images of the project along with the code will be uploaded [here](https://github.com/the-lifting-engineer/Binary_Clock/tree/main)
 The code will also be available on my webpage in the "Binary_Clock_Code_RevX_X" File.
 Any revisisions or older versions will be moved into the "Archive" Folder where the code will be labeled by revision VX.X
 
