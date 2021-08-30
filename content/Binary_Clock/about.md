@@ -71,6 +71,7 @@ Take your time:
 (End of lessons learned)
 
 Things left to do:  
+
 The code works, the circuit works so what is left to tackle?
 For starters I will be adding a 3rd Protoboard and jumping the Register outputs and the LED Inputs to this board. This will give me some flexitiblity in how I want to orientate the whole design.
 I will also be getting some use out of my 3D printer and making a case to house this setup.
@@ -78,6 +79,7 @@ I plan on adding a button to select different timezones using the free GPIO's th
 I did briefly consider adding a power supply to the setup but due to the nature of the Clock only working while on WIFI I don't see much reason to work towards this goal.
 
 Final thoughts and takeaway:  
+
 Although I loved the challenge I provided myself with this project and the future Rev2.0 additions I will be implementing I also realize I could have gone a lot simpeler with this setup.
 First off is return to form with an RTC, I would have saved myself a good amount of time with coding and had a lot more community support to lean on. Thats not to say that the ESP8266 does not have support.
 It was just a bit more of a learning curve.
