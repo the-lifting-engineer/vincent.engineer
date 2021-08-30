@@ -5,7 +5,7 @@ date = "2021-08-29"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Vincent The-Lifting-Engineer"
 +++
-'''html
+```html
 #include <NTPClient.h>
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
@@ -200,4 +200,4 @@ void loop() {
   digitalWrite(latchPin2, HIGH);
   
 }
-'''
+```
