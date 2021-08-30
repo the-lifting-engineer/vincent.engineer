@@ -5,10 +5,11 @@ date = "2021-08-29"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Vincent The-Lifting-Engineer"
 +++
-What is a Binary Clock: 
+What is a Binary Clock:
+<br> 
 A Binary Clock is a clock that shows the time as a binary value. For example 12:49 will be displayed as 1100 110001 (it should be noted this is seperating hours and minutes as seperate binary values for the purpose of displaying).
 
-Why this project:
+Why this project:  
 The Binary Clock is a common engineering project. The reason I choose to tackle this project was due to dynamic nature of the project. 
 A Binary Clock can be made as simple as by hard coding the values or adding additional layers such as using a RTC (Real Time Clock).
 
