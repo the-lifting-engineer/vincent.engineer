@@ -23,6 +23,8 @@ Using the shift registers allowed me to easily incorporate arrays into my code a
 Aside from LEDS the last remaining components I used was 220 Ohm resistors to drop the current and prevent the LED's from living a short but bright life.
 I added these resistors on the ground side of the LED's, due them acting only to limit current the positioning is not crucial and it helped with the soldering of the LED side of the board.
 
+It should be noted by LED's are laid out as follows XX XXXX XXX XXXX, HR(0-2) HR(0-9) MIN(0-5) MIN(0-9). Personal preference but I prefered this look. Allowing for 4 distinct rows. Additionally the LED's for Hours are blue and for Minutes are green to distinguesh them better.
+
 Thoughts I had during this project:
 *Why bother with Shift registers? I can just use two EDP8266 modules I have plenty of them.
 	The main reason I thought about this is because I have limited exposures to using Shift Registers and figured loading two ESP8266 modules with software (one would control hours and the other would control minutes) would be an easy copout. 
