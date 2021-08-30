@@ -92,3 +92,5 @@ The code will also be available on my webpage in the "Binary_Clock_Code_RevX_X" 
 Any revisisions or older versions will be moved into the "Archive" Folder where the code will be labeled by revision VX.X
 
 -The-Lifting-Engineer
+
+![the finished product](finished_clock.jpg)
