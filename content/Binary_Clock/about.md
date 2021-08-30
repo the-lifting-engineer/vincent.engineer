@@ -23,44 +23,42 @@ Using the shift registers allowed me to easily incorporate arrays into my code a
 Aside from LEDS the last remaining components I used was 220 Ohm resistors to drop the current and prevent the LED's from living a short but bright life.
 I added these resistors on the ground side of the LED's, due them acting only to limit current the positioning is not crucial and it helped with the soldering of the LED side of the board.
 
-It should be noted by LED's are laid out as follows XX XXXX XXX XXXX, HR(0-2) HR(0-9) MIN(0-5) MIN(0-9). Personal preference but I prefered this look. Allowing for 4 distinct rows. Additionally the LED's for Hours are blue and for Minutes are green to distinguesh them better.
-
 Thoughts I had during this project:
-*Why bother with Shift registers? I can just use two EDP8266 modules I have plenty of them.
+* Why bother with Shift registers? I can just use two EDP8266 modules I have plenty of them.
 	The main reason I thought about this is because I have limited exposures to using Shift Registers and figured loading two ESP8266 modules with software (one would control hours and the other would control minutes) would be an easy copout. 
 	Since they both would get time using WIFI I wasn't concerned about drift. I ended up deciding against this due to the increase in the footprint as well as it being an easy out rather than trying to find and work towards a more effective solution.
 
-*Why not use an RTC and an Atmega328P?
+* Why not use an RTC and an Atmega328P?
 	Orginally I had just wanted to build an easy Binary Clock but realized I would appreciate someting new and more challenging in certain areas. (Also I only have 2 Atmega328's lying around, I need to order more)
 
 ESP8266 Versus RTC:
 The pro's and cons of each will be described in this section and the final reasoning why I picked the ESP8266 module (aside from the reasoning given above)
 
 ESP8266 Pro's						RTC Pro's
-*Smaller footprint (standalone)				*Common, used in many projects
-*Highly accurate					*Capability to retain time if powered off and moved
-*I have a lot of them lying around for some reason	
+* Smaller footprint (standalone)			* Common, used in many projects
+* Highly accurate					* Capability to retain time if powered off and moved
+* I have a lot of them lying around for some reason	
 
 ESP8266 Cons						RTC Cons
-*Limited GPIO pins					*Larger footprint
-*Added complexity					*Needs to be used with a microcontroller 
-*Unfamiliar with it					*Accuracy might be questionable (not a huge concern)
-*Requires internet connection to work
+* Limited GPIO pins					* Larger footprint
+* Added complexity					* Needs to be used with a microcontroller 
+* Unfamiliar with it					* Accuracy might be questionable (not a huge concern)
+* Requires internet connection to work
 
 Lessons learned:
 There are a few things I learned doing this project that are worth noting down for future projects
 Space management and component layout:
-*While assembling the components I did not thing too much about how they should be oriented, this would come back to bite me when I got ready to solder the wires in place and realized I could have done a better job.
-*I ended up using two Protoboards when I should have used one larger one to build everything on.
-*Using protoboards was a bit messy and if I were to redo this project this way I'd buy some protoboards that have the side by side pads linked rather than all seperated.
+* While assembling the components I did not thing too much about how they should be oriented, this would come back to bite me when I got ready to solder the wires in place and realized I could have done a better job.
+* I ended up using two Protoboards when I should have used one larger one to build everything on.
+* Using protoboards was a bit messy and if I were to redo this project this way I'd buy some protoboards that have the side by side pads linked rather than all seperated.
 
 Coding:
-*No need to get very complicated, a few times I went off in to a rabbithole only to take a step back and realize the solution was a lot easier to implement then I was trying to. 
-*Array's are your friend and not that scary, use of arrays saved me a lot of time and actually made the process a lot smoother.
+* No need to get very complicated, a few times I went off in to a rabbithole only to take a step back and realize the solution was a lot easier to implement then I was trying to. 
+* Array's are your friend and not that scary, use of arrays saved me a lot of time and actually made the process a lot smoother.
 
 Take your time:
-*I wrote out all of the binary actions by hand first and was able to easily make changes to my code and wiring diagram before implementing everything. This saved me when I was wondering why I had an extra resistor that wasn't being used.
-*I cute a few wires way to short and struggled to get them to work. (Solution for this is in the works)
+* I wrote out all of the binary actions by hand first and was able to easily make changes to my code and wiring diagram before implementing everything. This saved me when I was wondering why I had an extra resistor that wasn't being used.
+* I cute a few wires way to short and struggled to get them to work. (Solution for this is in the works)
 
 (End of lessons learned)
 
@@ -79,7 +77,6 @@ I also think that this project could be moved to an even smaller foot print usin
 an 8x8 matrix would save a lot of space. (Plus no need for resistors) 
 I might revisit this option just for fun and update this page if I build it, it likely won't get a full write up as it is just being done as proof of concept (this is silly I know it can be done but ya know self satisifaction is important)
 
-I apologize in advance for the code, I'm sure it could be a lot better but it is functional :).
 Images of the project along with the code will be uploaded here (placeholder for github IP)
 The code will also be available on my webpage in the "Binary_Clock_Code_RevX_X" File.
 Any revisisions or older versions will be moved into the "Archive" Folder where the code will be labeled by revision VX.X
