@@ -5,7 +5,7 @@ date = "2021-08-29"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Vincent The-Lifting-Engineer"
 +++
-What is a Binary Clock:
+What is a Binary Clock: test
 A Binary Clock is a clock that shows the time as a binary value. For example 12:49 will be displayed as 1100 110001 (it should be noted this is seperating hours and minutes as seperate binary values for the purpose of displaying).
 
 Why this project:
