@@ -34,16 +34,18 @@ Thoughts I had during this project:
 ESP8266 Versus RTC:
 The pro's and cons of each will be described in this section and the final reasoning why I picked the ESP8266 module (aside from the reasoning given above)
 
-ESP8266 Pro's						RTC Pro's
-* Smaller footprint (standalone)			* Common, used in many projects
-* Highly accurate					* Capability to retain time if powered off and moved
-* I have a lot of them lying around for some reason	
+ESP8266 Pro's					   |	RTC Pro's
+---------------------------------------------------|-------------------------------------------------------------					
+Smaller footprint (standalone)			   |	Common, used in many projects
+Highly accurate					   |	Capability to retain time if powered off and moved
+I have a lot of them lying around for some reason  |	
 
-ESP8266 Cons						RTC Cons
-* Limited GPIO pins					* Larger footprint
-* Added complexity					* Needs to be used with a microcontroller 
-* Unfamiliar with it					* Accuracy might be questionable (not a huge concern)
-* Requires internet connection to work
+ESP8266 Cons					   |	RTC Cons
+---------------------------------------------------|-------------------------------------------------------------
+Limited GPIO pins				   |	Larger footprint
+Added complexity				   |	Needs to be used with a microcontroller 
+Unfamiliar with it				   |	Accuracy might be questionable (not a huge concern)
+Requires internet connection to work               |
 
 Lessons learned:
 There are a few things I learned doing this project that are worth noting down for future projects
