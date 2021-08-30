@@ -93,4 +93,4 @@ Any revisisions or older versions will be moved into the "Archive" Folder where 
 
 -The-Lifting-Engineer
 
-![the finished product](finished_clock.jpg)
+![The Finished Product](/finished_clock.jpg)
