@@ -22,8 +22,8 @@ byte data1 = 0;
 byte data2 = 0;
 byte dataArray[60];
 
-const char *ssid     = "totally legit wifi";
-const char *password = "goodlife";
+const char *ssid     = "Insert_your_WIFI_SSID";
+const char *password = "Insert_your_WIFI_Pswd";
 
 const long utcOffsetInSeconds = -25200;
 
