@@ -89,7 +89,6 @@ I might revisit this option just for fun and update this page if I build it, it 
 
 Images of the project along with the code will be uploaded [here](https://github.com/the-lifting-engineer/Binary_Clock/tree/main)
 The code will also be available on my webpage in the "Binary_Clock_Code_RevX_X" File.
-Any revisisions or older versions will be moved into the "Archive" Folder where the code will be labeled by revision VX.X
 
 -The-Lifting-Engineer
 
