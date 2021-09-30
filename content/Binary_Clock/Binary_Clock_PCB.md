@@ -11,6 +11,8 @@ This schematic was created using Eagle. It is a functional but non-optimized des
 
 ![PCB Board](../Binary_Clock/pcb_schematic.jpg)
 
+![The Finished Product](../finished_clock.jpg)
+
 -The-Lifting-Engineer
 
 
