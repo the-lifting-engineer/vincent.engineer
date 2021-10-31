@@ -1,7 +1,7 @@
 +++
 title = "About"
 description = "Helmet Add-On"
-date = "2018-08-12"
+date = "2015-05-10"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Vincent The-Lifting-Engineer"
 +++

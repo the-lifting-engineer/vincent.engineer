@@ -1,7 +1,7 @@
 +++
 title = "About"
 description = "Home Security System"
-date = "2018-08-12"
+date = "2021-10-30"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Vincent The-Lifting-Engineer"
 +++
