@@ -12,4 +12,4 @@ VISOR was my Senior Design project, it was completed by myself and a 3 other eng
 My personal role within this project was mostly related to the sensor input from the motorcycle to the helmet, designing the PCB layout and running simulations to verify our design would work as intended.  
 As well as working along side the other Electrical Engineer on this project to confirm intergration of components was achievable within the time frame.
 
--The-Lifting-Engineer
+-The-Lifting-Engineer leedle
